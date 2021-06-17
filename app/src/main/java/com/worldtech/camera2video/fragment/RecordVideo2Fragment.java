@@ -118,7 +118,6 @@ public class RecordVideo2Fragment extends Fragment implements RecordVideoInterfa
         record_file = videoPath;
         playerView.setDataBean(videoPath, time);
         updateRecordStatus(RecordStatus.TYPE_STOP_RECORD);
-
     }
 
     @Override
