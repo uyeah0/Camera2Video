@@ -199,7 +199,7 @@ public class TCConfigPlayerView extends RelativeLayout implements View.OnClickLi
 
     private void startPlay() {
         updatePlayStatus(PlayStatus.TYPE_START_PLAYING);
-        mTXVodPlayer.setRate(10.0f);
+        mTXVodPlayer.setRate(15.0f);
         int result = mTXVodPlayer.startPlay(videoUrl);
         if (0 != result) {
             stopPlay(true);
