@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".timerPopup">
+
+    <ImageButton
+        android:id="@+id/ib_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="right"
+        android:src="@drawable/cancel_icon"
+        android:background="@null"
+       />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:fontFamily="@font/notosans_regular"
+        android:gravity="center"
+        android:text="현재 공부 시간은\n3시간 26분 입니다"
+        android:textColor="@color/black"
+        android:textSize="60px" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:gravity="center"
+        android:text="어떤 방법으로 공부를 시작할까요?"
+        android:fontFamily="@font/notosans_regular"
+        android:textSize="40px"
+        android:textColor="@color/black" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/notosans_regular"
+        android:text="타이머 모드로 공부하기"
+        android:background="@drawable/yellow_square"
+        app:backgroundTint="@drawable/yellow_square" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/yellow_square"
+        android:fontFamily="@font/notosans_regular"
+        android:text="카메라 모드로 공부하기"
+        app:backgroundTint="@drawable/yellow_square" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="항상 이렇게 공부하기"
+        android:buttonTint="@color/dark_gray"
+        android:textColor="@color/dark_gray"
+        android:textSize="40px"
+        />
+</LinearLayout>
